@@ -8,6 +8,17 @@ img {
   width: 340px;
 }
 
+.notAnsweredForm {
+  
+}
+
+.rightAnswerForm {
+  border-color: green;
+}
+
+.wrongAnswerForm {
+  border-color: red;
+}
 
       .fish-name {
         padding: 0px 50px;

@@ -7,7 +7,7 @@ class ImageCard extends React.Component {
   }
   
   onGuessFormSubmit() {
-    this.setState({answered: !this.state.answered});
+    this.setState({answered: true});
   }
   
   render() {
@@ -16,7 +16,7 @@ class ImageCard extends React.Component {
         <td>
           <img src={this.props.animal.image} />
         </td>
-        <GuessForm onGuessFormSubmit={this.onGuessFormSubmit.bind(this)}/>
+        <GuessForm onGuessFormSubmit={this.onGuessFormSubmit.bind(this)} animal={this.props.animal}/>
         {this.state.answered ? <AnswerCard animal={this.props.animal}/> : null}
       </tr>
     )
