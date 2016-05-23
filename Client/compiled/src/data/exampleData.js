@@ -1,2 +1,26 @@
-"use strict";
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJleGFtcGxlRGF0YS5qcyIsInNvdXJjZXNDb250ZW50IjpbXX0=
+'use strict';
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Animal = function Animal(name, type, diet, lifespan, size, weight, image) {
+  _classCallCheck(this, Animal);
+
+  this.name = name;
+  this.type = type;
+  this.diet = diet;
+  this.lifespan = lifespan;
+  this.size = size;
+  this.weight = weight;
+  this.image = image;
+};
+
+;
+
+// lifespan = years, size = ft, weight = lbs
+var albatross = new Animal('Albatross', 'Bird', 'Carnivore', '50', '11', '22', 'http://www.antarctica.gov.au/__data/assets/image/0011/148376/varieties/antarctic.jpg');
+var caneToad = new Animal('Cane Toad', 'Amphibian', 'Omnivore', '10', '.5', '2.9', 'http://images.natureworldnews.com/data/images/full/2450/cane-toad-in-australia.jpg');
+
+var exampleAnimals = [albatross, caneToad];
+
+window.exampleAnimals = exampleAnimals;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9kYXRhL2V4YW1wbGVEYXRhLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7SUFBTSxNLEdBQ0osZ0JBQVksSUFBWixFQUFrQixJQUFsQixFQUF3QixJQUF4QixFQUE4QixRQUE5QixFQUF3QyxJQUF4QyxFQUE4QyxNQUE5QyxFQUFzRCxLQUF0RCxFQUE2RDtBQUFBOztBQUMzRCxPQUFLLElBQUwsR0FBWSxJQUFaO0FBQ0EsT0FBSyxJQUFMLEdBQVksSUFBWjtBQUNBLE9BQUssSUFBTCxHQUFZLElBQVo7QUFDQSxPQUFLLFFBQUwsR0FBZ0IsUUFBaEI7QUFDQSxPQUFLLElBQUwsR0FBWSxJQUFaO0FBQ0EsT0FBSyxNQUFMLEdBQWMsTUFBZDtBQUNBLE9BQUssS0FBTCxHQUFhLEtBQWI7QUFDRCxDOztBQUNGOzs7QUFHRCxJQUFJLFlBQVksSUFBSSxNQUFKLENBQVcsV0FBWCxFQUF3QixNQUF4QixFQUFnQyxXQUFoQyxFQUE2QyxJQUE3QyxFQUFtRCxJQUFuRCxFQUF5RCxJQUF6RCxFQUErRCxzRkFBL0QsQ0FBaEI7QUFDQSxJQUFJLFdBQVcsSUFBSSxNQUFKLENBQVcsV0FBWCxFQUF3QixXQUF4QixFQUFxQyxVQUFyQyxFQUFpRCxJQUFqRCxFQUF1RCxJQUF2RCxFQUE2RCxLQUE3RCxFQUFvRSxvRkFBcEUsQ0FBZjs7QUFFQSxJQUFJLGlCQUFpQixDQUFDLFNBQUQsRUFBWSxRQUFaLENBQXJCOztBQUVBLE9BQU8sY0FBUCxHQUF3QixjQUF4QiIsImZpbGUiOiJleGFtcGxlRGF0YS5qcyIsInNvdXJjZXNDb250ZW50IjpbImNsYXNzIEFuaW1hbCB7XG4gIGNvbnN0cnVjdG9yKG5hbWUsIHR5cGUsIGRpZXQsIGxpZmVzcGFuLCBzaXplLCB3ZWlnaHQsIGltYWdlKSB7XG4gICAgdGhpcy5uYW1lID0gbmFtZTtcbiAgICB0aGlzLnR5cGUgPSB0eXBlO1xuICAgIHRoaXMuZGlldCA9IGRpZXQ7XG4gICAgdGhpcy5saWZlc3BhbiA9IGxpZmVzcGFuO1xuICAgIHRoaXMuc2l6ZSA9IHNpemU7XG4gICAgdGhpcy53ZWlnaHQgPSB3ZWlnaHQ7XG4gICAgdGhpcy5pbWFnZSA9IGltYWdlO1xuICB9XG59O1xuXG4vLyBsaWZlc3BhbiA9IHllYXJzLCBzaXplID0gZnQsIHdlaWdodCA9IGxic1xudmFyIGFsYmF0cm9zcyA9IG5ldyBBbmltYWwoJ0FsYmF0cm9zcycsICdCaXJkJywgJ0Nhcm5pdm9yZScsICc1MCcsICcxMScsICcyMicsICdodHRwOi8vd3d3LmFudGFyY3RpY2EuZ292LmF1L19fZGF0YS9hc3NldHMvaW1hZ2UvMDAxMS8xNDgzNzYvdmFyaWV0aWVzL2FudGFyY3RpYy5qcGcnKTtcbnZhciBjYW5lVG9hZCA9IG5ldyBBbmltYWwoJ0NhbmUgVG9hZCcsICdBbXBoaWJpYW4nLCAnT21uaXZvcmUnLCAnMTAnLCAnLjUnLCAnMi45JywgJ2h0dHA6Ly9pbWFnZXMubmF0dXJld29ybGRuZXdzLmNvbS9kYXRhL2ltYWdlcy9mdWxsLzI0NTAvY2FuZS10b2FkLWluLWF1c3RyYWxpYS5qcGcnKTtcblxudmFyIGV4YW1wbGVBbmltYWxzID0gW2FsYmF0cm9zcywgY2FuZVRvYWRdO1xuXG53aW5kb3cuZXhhbXBsZUFuaW1hbHMgPSBleGFtcGxlQW5pbWFsczsiXX0=
