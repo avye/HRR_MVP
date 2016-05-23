@@ -2,7 +2,8 @@ class GuessForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      'borderColor': 'transparent'
+      'borderColor': 'transparent',
+      borderWidth: '4px'
     }
   }
   
