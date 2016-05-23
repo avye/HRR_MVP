@@ -1,0 +1,19 @@
+{
+  "name": "hrr_mvp",
+  "version": "1.0.0",
+  "description": "A two-day solo MVP project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avye/HRR_MVP.git"
+  },
+  "author": "Andrew Vye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avye/HRR_MVP/issues"
+  },
+  "homepage": "https://github.com/avye/HRR_MVP#readme"
+}

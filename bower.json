@@ -1,0 +1,17 @@
+{
+  "name": "HRR_MVP",
+  "homepage": "https://github.com/avye/HRR_MVP",
+  "authors": [
+    "Andrew Vye <a.vye26@gmail.com>"
+  ],
+  "description": "A two-day solo MVP project",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
