@@ -6,7 +6,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h2>Name that animal</h2>
+        <TitleBanner />
+        <CardView />
       </div>  
     );
   }

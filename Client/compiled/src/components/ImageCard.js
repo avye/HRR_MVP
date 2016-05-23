@@ -1,0 +1,8 @@
+"use strict";
+
+var ImageCard = function ImageCard() {
+  return React.createElement("div", null);
+};
+
+window.ImageCard = ImageCard;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9jb21wb25lbnRzL0ltYWdlQ2FyZC5qc3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFJLFlBQVksU0FBWixTQUFZO0FBQUEsU0FDZCxnQ0FEYztBQUFBLENBQWhCOztBQUtBLE9BQU8sU0FBUCxHQUFtQixTQUFuQiIsImZpbGUiOiJJbWFnZUNhcmQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgSW1hZ2VDYXJkID0gKCkgPT4gKFxuICA8ZGl2PlxuICA8L2Rpdj5cbik7XG5cbndpbmRvdy5JbWFnZUNhcmQgPSBJbWFnZUNhcmQ7Il19
