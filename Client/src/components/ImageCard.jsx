@@ -1,9 +1,9 @@
 var ImageCard = (props) => (
   <tr>
-    <td>{props.animal.name}</td>
     <td>
       <img src={props.animal.image} />
     </td>
+    <td>{props.animal.name}</td>
   </tr>
 );
 

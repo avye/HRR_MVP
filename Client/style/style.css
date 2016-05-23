@@ -1,0 +1,18 @@
+body {
+  background-color:lightgray;
+}
+
+img {
+  border-radius: 50px;
+  height: 340px;
+  width: 340px;
+}
+
+
+      .fish-name {
+        padding: 0px 50px;
+        font: italic bold 24px serif;
+      }
+      .fish-description {
+        padding: 0px 50px;
+      }
