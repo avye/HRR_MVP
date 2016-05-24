@@ -18,8 +18,6 @@ app.use(express.static(__dirname + '/Client'));
 // Get our router set up
 var router = express.Router();
 
-
-
 // Basic router to run first
 router.use(function(req, res, next) {
     console.log('A request has been sent.');
