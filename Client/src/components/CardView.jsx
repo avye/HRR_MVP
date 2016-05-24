@@ -1,5 +1,5 @@
 var CardView = (props) => (
-  <table>
+  <table className="cardTable">
     <tbody>
       {props.animals.map(
         element =>

@@ -27,8 +27,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <TitleBanner />
-        <GetAnimals onGetAnimalsClick={this.onGetAnimalsClick.bind(this)} />
+        <div className="banner">
+          <TitleBanner />
+          <GetAnimals onGetAnimalsClick={this.onGetAnimalsClick.bind(this)} />
+        </div>
         <CardView animals={this.state.animals} />
       </div>  
     );

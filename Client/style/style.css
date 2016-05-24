@@ -1,5 +1,6 @@
 body {
-  background-color:lightgray;
+  background-color:white;
+  font: Arial, sans-serif;
 }
 
 img {
@@ -8,6 +9,26 @@ img {
   width: 340px;
 }
 
+.banner {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.titleBanner-header {
+}
+.getAnimalsButton {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardTable {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
       .fish-name {
         padding: 0px 50px;
         font: italic bold 24px serif;
