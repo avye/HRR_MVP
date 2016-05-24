@@ -1,13 +1,11 @@
 var AnswerCard = (props) => (
   <td>
-    <ul>
-      <li>Name: {props.animal.name}</li>
-      <li>Type: {props.animal.type}</li>
-      <li>Diet: {props.animal.diet}</li>
-      <li>Life span: {props.animal.lifespan} years</li>
-      <li>Size: {props.animal.size} ft</li>
-      <li>Weight: {props.animal.weight} lbs</li>
-    </ul>
+      <p>Name: {props.animal.name}</p>
+      <p>Type: {props.animal.type}</p>
+      <p>Diet: {props.animal.diet}</p>
+      <p>Life span: {props.animal.lifespan} years</p>
+      <p>Size: {props.animal.size} ft</p>
+      <p>Weight: {props.animal.weight} lbs</p>
   </td>
 );
 
