@@ -1,7 +1,6 @@
 var utils = {
   getAllAnimals:  (callback) => {
-    // try it with the heroku url
-    // or try it with just the /api/animals
+
     $.ajax({
       type: "GET",
       url: "/api/animals",
