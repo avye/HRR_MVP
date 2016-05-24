@@ -10,5 +10,3 @@ var AnswerCard = (props) => (
 );
 
 window.AnswerCard = AnswerCard;
-
-//(name, type, diet, lifespan, size, weight, image)
