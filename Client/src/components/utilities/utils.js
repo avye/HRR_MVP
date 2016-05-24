@@ -1,6 +1,6 @@
 var utils = {
   getAllAnimals:  (callback) => {
-    // add in functionality to update the url
+    // Do I need to update url?
     $.ajax({
       type: "GET",
       url: "http://localhost:8080/api/animals",

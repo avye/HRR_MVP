@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./Server/server.js",
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "postinstall": "bower install",
     "babel": "babel ./Client --out-dir ./Client/compiled --presets=es2015,react --ignore=node_modules,compiled,style,bower_components --source-maps inline"
   },
   "repository": {
