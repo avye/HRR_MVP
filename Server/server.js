@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // Set our port
-var port = process.envPORT || 8080;
+var port = process.env.PORT || 8080;
 
 // Serve up our static file
 app.use(express.static(__dirname + '/Client'));
