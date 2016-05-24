@@ -16,7 +16,9 @@ var port = process.env.PORT || 8080;
 // Serve up our static file
 
 // check this out, 
-app.use('/', express.static('../Client'));
+// app.use('/', express.static(__dirname+'/Client'));
+app.use(express.static('../Client'));
+
 // Get our router set up
 var router = express.Router();
 
