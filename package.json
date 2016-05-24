@@ -24,7 +24,4 @@
     "express-partials": "^0.3.0",
     "mongoose": "^4.4.19"
   }
-  "engines": {
-    "npm": "3.8.6"
-  }
 }
