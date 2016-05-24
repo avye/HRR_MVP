@@ -4,7 +4,7 @@
   "description": "A two-day solo MVP project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./Server/server.js",
     "babel": "babel ./Client --out-dir ./Client/compiled --presets=es2015,react --ignore=node_modules,compiled,style,bower_components --source-maps inline"
   },
   "repository": {
