@@ -8,9 +8,6 @@ class App extends React.Component {
   }
   
   onGetAnimalsClick() {
-    console.log('oh yeah');
-    // do something with a randomizer so it only shows two animals at a time
-    
     this.props.utils.getAllAnimals( (animals) => {
       var randomNumber = Math.floor(Math.random()*animals.length);
       var randomAnimal = animals.splice(randomNumber,1);
