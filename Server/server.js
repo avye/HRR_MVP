@@ -13,8 +13,12 @@ app.use(bodyParser.json());
 // Set our port
 var port = process.envPORT || 8080;
 
+// Serve up our static file
+app.use(express.static('../Client'));
 // Get our router set up
 var router = express.Router();
+
+
 
 // Basic router to run first
 router.use(function(req, res, next) {
