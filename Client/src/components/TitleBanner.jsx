@@ -1,6 +1,6 @@
 var TitleBanner = () => (
   <div>
-    <h2 className="titleBanner-header">Name that Animal!</h2>
+    <h2 className="titleBanner-header">NAME THAT ANIMAL</h2>
   </div>
 );
 
