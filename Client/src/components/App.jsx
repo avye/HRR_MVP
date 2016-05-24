@@ -31,8 +31,12 @@ class App extends React.Component {
     });
   }
   
-  onSubmitAnAnimal() {
-    
+  onSubmitAnAnimal(animal) {
+    console.log(animal);
+    this.setState({
+      AddAnAnimalClicked: false
+    });
+    alert('Animal added to the database!');
   }
   
   render() {
@@ -43,7 +47,7 @@ class App extends React.Component {
           <GetAnimals onGetAnimalsClick={this.onGetAnimalsClick.bind(this)} />
           <MakeAnAnimal onMakeAnAnimalClick={this.onMakeAnAnimalClick.bind(this)}/>
         </div>
-        <div className="makeAnAnimalform">
+        <div className="makeAnAnimalForm">
           {this.state.AddAnAnimalClicked ? <MakeAnAnimalForm onSubmitAnAnimal={this.onSubmitAnAnimal.bind(this)}/> : null}
         </div>
         <CardView animals={this.state.animals} />
