@@ -63,7 +63,7 @@ console.log('Server started and listening on ' + port);
 
 
 // Serve up the static file
-// Will need to make thsi path relative with __dirname + '/client'
+// Will need to make this path relative with __dirname + '/client'
 // app.use(express.static('../Client'));
 
 module.exports = app;
