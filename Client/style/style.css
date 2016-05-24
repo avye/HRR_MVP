@@ -20,9 +20,24 @@ img {
 }
 
 .getAnimalsButton {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+}
+
+.makeAnAnimalButton {
   width: 100px;
   margin-left: auto;
   margin-right: auto;
+  display: inline;
+}
+
+.makeAnAnimalbanner {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .cardTable {

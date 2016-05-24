@@ -3,7 +3,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       //animals: this.props.exampleAnimals
-      animals: []
+      animals: [],
+      AddAnAnimalClicked: false
     };
   }
   
@@ -24,14 +25,29 @@ class App extends React.Component {
     });
   }
   
+  onMakeAnAnimalClick() {
+    this.setState({
+      AddAnAnimalClicked: true
+    });
+  }
+  
+  onSubmitAnAnimal() {
+    
+  }
+  
   render() {
     return (
       <div>
         <div className="banner">
           <TitleBanner />
           <GetAnimals onGetAnimalsClick={this.onGetAnimalsClick.bind(this)} />
+          <MakeAnAnimal onMakeAnAnimalClick={this.onMakeAnAnimalClick.bind(this)}/>
+        </div>
+        <div className="makeAnAnimalform">
+          {this.state.AddAnAnimalClicked ? <MakeAnAnimalForm onSubmitAnAnimal={this.onSubmitAnAnimal.bind(this)}/> : null}
         </div>
         <CardView animals={this.state.animals} />
+
       </div>  
     );
   }
