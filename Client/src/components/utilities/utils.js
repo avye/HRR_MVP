@@ -4,7 +4,7 @@ var utils = {
     // or try it with just the /api/animals
     $.ajax({
       type: "GET",
-      url: "http://localhost:8080/api/animals",
+      url: "/api/animals",
       contentType: 'application/json',
       success: function success(data) {
         callback(data);
@@ -17,7 +17,7 @@ var utils = {
     
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/api/animals",
+      url: "/api/animals",
       contentType: 'application/json',
       data: data,
       success: function success(data) {
