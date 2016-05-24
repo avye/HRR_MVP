@@ -11,7 +11,7 @@ class App extends React.Component {
   onGetAnimalsClick() {
     this.props.utils.getAllAnimals( (animals) => {
       var randomNumber = Math.floor(Math.random()*animals.length);
-      var backUpRandomNumber = Math.floor(Math.random()*animals.length);
+      var backUpRandomNumber = Math.floor(Math.random()*animals.length-1);
       
       var randomAnimal = animals.splice(randomNumber,1);
       // Check to ensure that the same animal isn't shown twice
