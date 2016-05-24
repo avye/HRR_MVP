@@ -11,12 +11,12 @@ var utils = {
     });
   },
   
-  addOneTodo: (todo, callback) => {
-    var data = JSON.stringify({todo: todo});
+  addOneAnimal: (animal, callback) => {
+    var data = JSON.stringify(animal);
     
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/todos",
+      url: "http://localhost:8080/api/animals",
       contentType: 'application/json',
       data: data,
       success: function success(data) {

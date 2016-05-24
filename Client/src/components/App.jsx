@@ -32,11 +32,14 @@ class App extends React.Component {
   }
   
   onSubmitAnAnimal(animal) {
-    console.log(animal);
     this.setState({
       AddAnAnimalClicked: false
     });
-    alert('Animal added to the database!');
+    var doneAlert = () => {
+      alert('Animal added to the database!');
+    };
+    
+    this.props.utils.addOneAnimal(animal, doneAlert);
   }
   
   render() {
